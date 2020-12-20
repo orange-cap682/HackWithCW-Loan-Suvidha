@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+     <style type="text/css" rel="style.css">
+        body{
+            background-color: white;
+            backface-visibility: visible;
+            
+        }
+        table{
+            background-color: #ffff80;
+            color: black;
+        }
+        td{
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-size: 16px;
+            color: black;
+        }
+        .align-center{
+            text-align: center;
+            padding: 10px 50px;
+        }
+        .table {
+            background-color: #ffff80;
+            color: black;
+            display: relative;
+    border:2px solid blue;
+    padding:10px 10px;
+        font-size:16px;
+        }
+        .extra{
+            padding: 12px 80px;
+            font-size: 18px;
+            color: black;
+        }
+        a:hover{
+            text-decoration: none;
+            transition: 0.3s ease;
+            color:black;
+        }
+        .chota{
+            color:black;
+            text-decoration: none;
+        }
+        h1 , p , h3{
+            padding-left: 20px;
+        }
+    </style>
+
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " >
+  <a class="navbar-brand text-warning" href="Loan Type.html">OrangeCap</a>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Loan Type.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <h1>Education Loan</h1>
+    <p>Know the latest interest rates on education loans from leading banks in India so that you can compare rates and
+        select the best student loan for your requirements. There are many factors that influence the rate of interest
+        on these loans. Know what they are and how to calculate your education loan EMI for better financial management.
+
+        Also find out all about the eligibility criteria and documents required to ensure that your application has a
+        greater chance of approval.
+    </p>
+    <div class="container mb-3 mt-3">
+    <table class="table table-striped table-bordered mdata" style="width:100%"><thead><tr><th>
+            Banks</th>
+            <th>Interest Rates</th>
+            <th>Processing Fee</th>
+        </tr></thead>
+        <tbody><tr>
+            <td>PNB</td>
+            <td>7.30 to 9.80 p.a.</td>
+            <td>1% of loan amount</td>
+        </tr>
+        <tr>
+            <td>SBI</td>
+            <td>7.97% to 10.05% p.a.</td>
+            <td>Rs.10000 + tax</td>
+        </tr>
+        <tr>
+            <td>Axis</td>
+            <td>13.70% to 15.20% p.a.</td>
+            <td>Nil to Rs.10000 + tax</td>
+        </tr>
+        <tr>
+            <td>Bank of Baroda</td>
+            <td>8.25% to 10% p.a.</td>
+            <td>1% of loan amount upto Rs.10000</td>
+        </tr>
+        <tr>
+            <td>HDFC</td>
+            <td>For Preferential Rates Contact HDFC</td>
+            <td>Up to 1.5% of loan amount + tax</td>
+        </tr>
+        <tr>
+            <td>Tata Capital</td>
+            <td>10.99% onwards</td>
+            <td>Up to 2.75% of loan amount + tax</td>
+        </tr>
+        <tr>
+            <td>Union Bank of India</td>
+            <td>6.90% onwards</td>
+            <td>Nil for Indian Students 0.50% of loan amount for NRI Students + tax</td>
+        </tr>
+        <tr>
+            <td>Bank of India</td>
+            <td>9.10% onwards</td>
+            <td>Nil for courses in India Rs.5000 + other fees for study abroad</td>
+        </tr>
+        <tr>
+            <td>Kotak Mahindra Bank</td>
+            <td>Up to 16%</td>
+            <td>Contact the Bank</td>
+        </tr>
+        <tr>
+            <td>ICICI Bank</td>
+            <td>Contact the Bank</td>
+            <td>Contact the Bank</td>
+        </tr>
+        <tr>
+            <td>Federal Bank</td>
+            <td>10.05% onwards</td>
+            <td>Contact the Bank</td>
+        </tr></tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/query.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/datatables.bootstrap4.min.js"></script>
+    <h2>Education Loan Egibility:</h2>
+    <dl>
+        <dt><b>Nationality:</b></dt>
+        <dd>
+            <ul>
+                <li>Indian Citizens</li>
+                <li>Non-Indian Residents (NRIs)</li>
+                <li>Overseas Citizens of India (OCI)</li>
+                <li>Persons of Indian Origin (PIOs)</li>
+                <li>Students born to Indian parents abroad and wish to study in India</li>
+            </ul>
+        </dd>
+        <dt><b>Courses:</b></dt>
+        <dd>
+            <ul>
+                <li>Undergraduate programs</li>
+                <li>Postgraduate programs</li>
+                <li>Doctoral courses and PhDs</li>
+                <li>Certificate courses with 6 months or longer duration</li>
+                <li>Job-oriented courses</li>
+                <li>Technical/diploma/professional courses</li>
+            </ul>
+        </dd>
+        <dt><b>Institutes:</b></dt>
+        <dd>
+            <ul>
+                <li>Recognized institutions and government colleges</li>
+                <li>Private institutes aided by government</li>
+                <li>Professional institutions</li>
+                <li>International colleges and universities</li>
+            </ul>
+        </dd>
+        <dt><b>Collateral:</b></dt>
+        <dd>
+            <ul>
+                <li>Collateral-free loans up to Rs.7.5 lakh from leading lenders</li>
+                <li>Collateral-free loans up to Rs.40 lakh for select courses/institutions from select lenders</li>
+            </ul>
+        </dd>
+    </dl>
+    <p>Acceptable collateral: Residential or commercial property or plot, fixed deposits, insurance<br><br>
+
+        Loan amount: Up to Rs.1 crore</p>
+    <h2>List of Expenses Covered in Education Loan:</h2>
+    Here’s what the loan amount will cover:
+    <ul>
+        <li>Tuition fees</li>
+        <li>Hostel fees</li>
+        <li>Travel expenses passage money for students studying abroad</li>
+        <li>Insurance premium</li>
+        <li>Cost of books/equipment/instruments/uniform</li>
+        <li>Examination/laboratory/library fees</li>
+        <li>Cost of a computer/laptop required for course completion</li>
+        <li>Caution deposit, building fund/refundable deposit supported by institution bills/receipts</li>
+        <li>Any other expense required to complete the course such as study tours/thesis/project work</li>
+    </ul>
+    <h2>List of Documents Required For Education Loan</h2>
+    Here is an indicative list of documents that most lenders ask:
+    <ul>
+        <li>Admission letter from the educational institution</li>
+        <li>Marksheets (previous education – school/college)</li>
+        <li>Age proof</li>
+        <li>ID proof</li>
+        <li>Address proof</li>
+        <li>Signature proof</li>
+        <li>Salary slips</li>
+        <li>Recent bank account statements</li>
+        <li>ITR with income computation</li>
+        <li>Audited balance sheet</li>
+        <li>Recent bank statements</li>
+        <li>Proof of turnover (service tax return/sales receipt)</li>
+        <li>Completed application form with signature</li>
+        <li>Latest passport size photographs</li>
+        <li>Appropriate Visa for studies abroad</li>
+    </ul>
+    *Document charges may be levied by the lender.<br>
+
+</body>
+
+</html>

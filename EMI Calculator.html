@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi Calculator</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style type="text/css">
+    		*{
+			margin: 1px;
+			padding: 5px;
+			transition: 0.3s ease;
+		}
+		ul li a section div{ 
+			transition: 0.3s ease;
+		}
+		body{
+			background-color: white;
+			backface-visibility: visible;
+			text-decoration: none;
+			transition: 0.3s ease;
+			
+		}
+		table{
+			
+			color: black;
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+		td{
+			border-radius: 25px;
+			padding: 10px 25px;
+			font-size: 16px;
+			color: black;
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+		.align-center{
+			text-align: center;
+			padding: 10px 50px;
+			text-decoration: none;
+			transition: 0.3s ease;
+		}
+
+        a{
+        	color:black;
+        	text-decoration: none;
+        	transition: 0.3s ease;
+        }
+
+        a:hover{
+        	text-decoration: none;
+        	transition: 0.3s ease;
+        }
+
+        .row{
+        	color: orange;
+        	transition: 0.3s ease;
+        }
+        .col .col-md-3 .col-sm-6 .row .card-block .card .card-text .card-title{
+        	color:white;
+        	transition: 0.3s ease;
+        	background-color: #ffc299;
+        	transition: 0.3s ease;
+        }
+        div .fg{
+        	background-color: #ffc299;
+        	color:#000;
+        	transition: 0.3s ease;
+        }
+        div .gh{
+        	background-color: #ffc299;
+        	border-radius: 20px;
+        	transition: 0.3s ease;
+        	
+        }
+input{
+  width: 100%;
+  height: 40px;
+  color: orange;
+  transition: 0.3s ease;
+
+}
+input:hover{
+  width: 100%;
+  height: 40px;
+  color: blue;
+  transition: 0.3s ease;
+
+}
+h1{
+  text-align: center;
+  transition: 0.3s ease;
+}
+h1:hover{
+  text-align: center;
+  transition: 0.3s ease;
+  color: blue;
+}
+.option{
+  display: flex;
+  transition: 0.3s ease;
+}
+.option:hover{
+  display: flex;
+  color: blue;
+  transition: 0.3s ease;
+}
+label{
+  color:  #ffc299;
+  transition: 0.3s ease;
+ 
+}
+
+.password-result{
+  display: flex;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+.btn{
+  background-color: #ffc299;
+  
+  border: 0;
+  
+}
+.btn:hover{
+  background-color: blue;
+  
+  border: 0;
+  
+}
+.btn-sub{
+  color: black;
+  margin-top: 10px;
+  border: 1px solid white;
+  margin: auto;
+  font-weight: bolder;
+  transition: 0.3s ease;
+  
+}
+.btn-sub:hover{
+  color: orange;
+  border: 0;
+  margin-top: 10px;
+  border: 1px solid white;
+  margin: auto;
+  transition: 0.3s ease;
+  
+}
+.button:hover{
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: bolder;
+  transition: 0.3s ease;
+}
+
+    </style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg  navbar-dark bg-dark " >
+  <a class="navbar-brand text-warning" href="Loan Type.html">OrangeCap</a>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Loan Type.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <div class="container" style="display: flex;margin-top: 2%;">
+ 
+  <div class="col-sm-6 col-12 card-block " >
+        <h1 >EMI Calculator</h1>
+        <form name="loan-form ">
+        <div class='loanBlock '>
+            <h3 >Loan Amount</h3>
+            <input type=number id="amount" style="border-radius:5px"><br>
+        </div>
+         <div class='aprBlock '>
+            <h3>Interest Rate</h3>
+            <input type="number" name="apr" id="apr" style="border-radius:5px"><br>
+         </div>
+          <div class='tenureBlock'>
+          <h3 >Time Periods(yrs)</h3>
+         <input type=number name="tenure" id="tenure" style="border-radius:5px"><br>
+         <br>
+          </div>
+          <div class="d-flex">
+        <button id="find" class="btn-sub">Find Emi</button>
+          </div>
+        </form>
+       
+       
+        
+      </div>
+      <div class="col-sm-6 col-12pl-2 card card-block .gh">
+
+          <h1 class="gh">Results</h1><br/>
+          <h3 class="gh">Total EMI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="emi"></span></h3>
+          <h3 class="gh">Total Amount: &nbsp;&nbsp;&nbsp;&nbsp;<span id="totalAmt"></span></h3>
+          <h3 class="gh">Total Interest:&nbsp;&nbsp;&nbsp;&nbsp;<span id="totalInt"></span></h3>
+         
+  </div>
+  <script>
+   document.querySelector('#find').addEventListener('click',function(e){
+   
+    e.preventDefault();
+    var loan=document.getElementById('amount').value;
+    
+    var interestRate=document.getElementById('apr').value;
+    var tenure=document.getElementById('tenure').value;
+   
+    var noOfMonths=Math.floor(tenure)*12;
+    var monthlyRate=interestRate/(12*100);
+    var onePlusR=Math.pow(1+monthlyRate,noOfMonths)
+    var denominator=onePlusR-1;
+    var emi=(loan*monthlyRate*(onePlusR/denominator)).toPrecision(5);
+    var totalAmt=noOfMonths*parseFloat(emi);
+    var totalInt=Math.floor(totalAmt-loan);
+
+    var payableEmi=document.getElementById('emi');
+    var payableamount=document.getElementById('totalAmt');
+    var payableInt=document.getElementById('totalInt');
+    payableEmi.innerHTML=parseFloat(emi);
+    payableamount.innerHTML=parseFloat(totalAmt);
+    payableInt.innerHTML=parseFloat(totalInt);
+    
+    // for chart
+
+  
+});
+// window.onload = function() {
+   
+    
+  
+    
+//     }
+    </script>
+</body>
+</html>

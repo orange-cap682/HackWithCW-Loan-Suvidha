@@ -7,27 +7,27 @@
     <title>Home Loans</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
-	<link type="text/css" rel="stylesheet" href="style.css">
+	<style type="text/css">
 		body{
-			background-color: white;
-			backface-visibility: visible;
-			
-		}
-		table{
-			background-color: #ffff80;
-			color: black;
-		}
-		td{
-			border-radius: 25px;
-			padding: 10px 25px;
-			font-size: 16px;
-			color: black;
-		}
-		.align-center{
-			text-align: center;
-			padding: 10px 50px;
-		}
-		.table {
+            background-color: white;
+            backface-visibility: visible;
+            
+        }
+        table{
+            background-color: #ffff80;
+            color: black;
+        }
+        td{
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-size: 16px;
+            color: black;
+        }
+        .align-center{
+            text-align: center;
+            padding: 10px 50px;
+        }
+        .table {
             background-color: #ffff80;
             color: black;
             display: relative;
@@ -36,146 +36,166 @@
         font-size:16px;
         }
         .extra{
-        	padding: 12px 80px;
-        	font-size: 18px;
-        	color: black;
+            padding: 12px 80px;
+            font-size: 18px;
+            color: black;
         }
         a:hover{
-        	color:black;
-        	text-decoration: none;
-        	transition: 0.3s ease;
+            color:black;
+            text-decoration: none;
+            transition: 0.3s ease;
         }
         dt,dd,p,h1,h3,b,h2,h4,h5,h6{
-        	padding-left: 15px;
+            padding-left: 15px;
         }
 	</style>
 </head>
 
 <body>
-    <h2>Home Loan</h2>
-    <p>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark " >
+  <a class="navbar-brand text-warning" href="Loan Type.html">OrangeCap</a>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Loan Type.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav><br><br>
+    <h1>Home Loan</h1>
+<br><br>
+    <h3>
         Compare the lowest home loan interest rate starting from 6.75% p.a. and apply for the best home loan. Get the
         complete list of current housing loan rate of interest in India from all leading banks and financial
         institutions.
-    </p>
-    <table>
-        <tr>
-            <th>Banks</th>
-            <th>Interest Rates(p.a.)</th>
-            <th>Processing Fees</th>
+    </h3>
+   <div class="container mb-3 mt-3">
+    <table class="table table-striped table-bordered mdata" style="width:100%"><thead><tr><th><b>Banks</b></th>
+            <th><b>Interest Rates(p.a.)</b></th>
+            <th><b>Processing Fees</b></th>
         </tr>
-        <tr>
-            <td><a href="">Kotak Mahindra Bank</a></td>
+    </thead>
+        <tbody><tr><td><a href="https://www.kotak.com/en/personal-banking/loans/home-loan.html">Kotak Mahindra Bank</a></td>
             <td>6.75%</td>
             <td>0.50%</td>
         </tr>
         <tr>
-            <td><a href="">Citibank</a></td>
+            <td><a href="https://www.online.citibank.co.in/loans/home-loans">Citibank</a></td>
             <td>6.75%</td>
             <td>Rs. 10000</td>
         </tr>
         <tr>
-            <td><a href="">Union Bank of India</a></td>
+            <td><a href="https://www.unionbankofindia.co.in/english/home-loan.aspx">Union Bank of India</a></td>
             <td>6.80%</td>
             <td>Rs. 5000 - Rs. 15000</td>
         </tr>
         <tr>
-            <td><a href="">Bank of Baroda</a></td>
+            <td><a href="https://dil.bankofbaroda.co.in/homeloan?ct=Z2dsc3JjaA==&gclid=Cj0KCQiAmfmABhCHARIsACwPRAD031pBKe2_oyXNDZ-0BO9hJTJfdQDDWUvB-EIvfpB5dA-ClyNFy0kaAmGYEALw_wcB">Bank of Baroda</a></td>
             <td>6.85%</td>
             <td>Rs. 8500 - Rs. 25000</td>
         </tr>
         <tr>
-            <td><a href="">Central Bank of India</a></td>
+            <td><a href="https://www.centralbankofindia.co.in/English/cent_home_loan.aspx">Central Bank of India</a></td>
             <td>6.85%</td>
             <td>Rs. 20000</td>
         </tr>
         <tr>
-            <td><a href="">Bank of India</a></td>
+            <td><a href="https://www.bankofindia.co.in/homeloan">Bank of India</a></td>
             <td>6.85%</td>
             <td>Rs. 1500 - Rs. 20000</td>
         </tr>
         <tr>
-            <td><a href="">SBI</a></td>
+            <td><a href="https://homeloans.sbi">SBI</a></td>
             <td>6.90%</td>
             <td>rS. 4000 - Rs. 17400</td>
         </tr>
         <tr>
-            <td><a href="">HDFC</a></td>
+            <td><a href="https://www.hdfc.com/housing-loans/home-loans">HDFC</a></td>
             <td>6.90%</td>
             <td>Rs. 3000 - rS. 4500</td>
         </tr>
         <tr>
-            <td><a href="">ICICI Bank</a></td>
+            <td><a href="https://www.icicibank.com/Personal-Banking/loans/home-loan/index.page">ICICI Bank</a></td>
             <td>6.90%</td>
             <td>Rs. 3000</td>
         </tr>
         <tr>
-            <td><a href="">LIC Housing Finance</a></td>
+            <td><a href="https://www.lichousing.com/lms_module.php?gclid=Cj0KCQiAmfmABhCHARIsACwPRAB9zwBrwoeDldjOB9KfH6EqqhnktM_-rHK66mqDQ4_wFuc76GTOqdoaAgkYEALw_wcB">LIC Housing Finance</a></td>
             <td>6.90%</td>
             <td>Rs. 10000 - Rs. 15000</td>
         </tr>
         <tr>
-            <td><a href="">Axis Bank</a></td>
+            <td><a href="https://www.axisbank.com/retail/loans/home-loan/axis-bank-home-loan/features-benefits">Axis Bank</a></td>
             <td>6.90%</td>
             <td>Rs. 10000</td>
         </tr>
         <tr>
-            <td><a href="">Canara Bank</a></td>
+            <td><a href="https://www.canarabank.com/User_page.aspx?menulevel=1&menuid=3&CatID=21">Canara Bank</a></td>
             <td>6.90%</td>
             <td>Rs. 1500 - Rs. 10000</td>
         </tr>
         <tr>
-            <td><a href="">IDFC Bank</a></td>
+            <td><a href="https://www.idfcfirstbank.com/banking-products/loans/home-loan.html">IDFC Bank</a></td>
             <td>7%</td>
             <td>Rs. 5000</td>
         </tr>
         <tr>
-            <td><a href="">Indian Overseas Bank</a></td>
+            <td><a href="https://www.iob.in/housing-loans---subha-gruha">Indian Overseas Bank</a></td>
             <td>7.05%</td>
             <td>0.50% (Max Rs. 20000)</td>
         </tr>
         <tr>
-            <td><a href="">Punjab National Bank</a></td>
+            <td><a href="https://www.pnbindia.in/housing-loan.html">Punjab National Bank</a></td>
             <td>7.10%</td>
             <td>0.35% (Max Rs. 15000)</td>
         </tr>
         <tr>
-            <td><a href="">UCO Bank</a></td>
+            <td><a href="https://www.ucobank.com/english/UCOHomeLoanApplicationForm.aspx">UCO Bank</a></td>
             <td>7.15%</td>
             <td>0.15% (Rs. 1500 - Rs. 15000)</td>
         </tr>
         <tr>
-            <td><a href="">IDBI Bank</a></td>
+            <td><a href="https://www.idbibank.in/digitaladvcampleads/IDBIHomeLoan.aspx?utm_source=GoogleSearch&utm_medium=Brand&utm_campaign=HomeLoanJan2021&gclid=Cj0KCQiAmfmABhCHARIsACwPRAA5VrTNY1IFzSqaDghCy6JcyjiZPH8LNvde4eFt2ezO0vpGGAupPZMaAs58EALw_wcB">IDBI Bank</a></td>
             <td>7.40%</td>
             <td>0.50%(Rs. 2500 - Rs. 5000)</td>
         </tr>
         <tr>
-            <td><a href="">Federal Bank</a></td>
+            <td><a href="https://www.federalbank.co.in/housing-loan">Federal Bank</a></td>
             <td>7.90%</td>
             <td>Rs. 3000 - Rs. 7500</td>
         </tr>
         <tr>
-            <td><a href="">Karnataka Bank</a></td>
+            <td><a href="https://karnatakabank.com/personal/loans/home-loans">Karnataka Bank</a></td>
             <td>8.17%</td>
             <td>Rs. 250</td>
         </tr>
         <tr>
-            <td><a href="">Tata Capital</a></td>
+            <td><a href="https://www.tatacapital.com/online/loans/home-loans/apply-now-home-loan?cid=Search:HL:Paid-Seach:Ethinos:Sep-20:#!:tata_capital_home_loan&gclid=Cj0KCQiAmfmABhCHARIsACwPRAAL8IfOeU_7qaBRauUpLH82OPg8kQdgZRmCYViq7_GZSSOHbRByFlMaAm4vEALw_wcB">Tata Capital</a></td>
             <td>8.50%</td>
             <td>0.50%</td>
         </tr>
         <tr>
-            <td><a href="">IIFL</a></td>
+            <td><a href="https://www.iifl.com/home-loans">IIFL</a></td>
             <td>8.70%</td>
             <td>1.25%</td>
         </tr>
         <tr>
-            <td><a href="">Yes Bank</a></td>
+            <td><a href="https://www.yesbank.in/personal-banking/yes-individual/loans/home-loan">Yes Bank</a></td>
             <td>8.85%</td>
             <td>1%(Rs. 10000)</td>
         </tr>
         <tr>
-            <td><a href="">Aditya Birla</a></td>
+            <td><a href="https://homefinance.adityabirlacapital.com/home-loan">Aditya Birla</a></td>
             <td>9.00%</td>
             <td>1%</td>
         </tr>
